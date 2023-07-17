@@ -3,7 +3,7 @@
 /**
  * main - outputs letters except q and e
  *
- * return: always(0)
+ * Return: Always(0)
  *
  */
 int main(void)

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <std2-print_alphabet.cib.h>
 /**
  * main - return alphabets
  *
