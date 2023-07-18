@@ -6,6 +6,13 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
-	return (0);
+	int a;
+	char c[] = "_putchar";
+
+	for (a = 0; a <= 7; a++)
+	{
+		putchar(c[a]);
+	}
+	putchar('\n');
+		return (0);
 }
