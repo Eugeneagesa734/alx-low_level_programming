@@ -17,7 +17,7 @@ int _isalpha(int c)
 	{
 		for (u = 'A'; u <= 'Z'; u++)
 		{
-		if (l == c || u == C)
+		if (l == c || u == c)
 		{
 			letter = 1;
 		}
@@ -25,4 +25,3 @@ int _isalpha(int c)
 	}
 	return (letter);
 }
-
