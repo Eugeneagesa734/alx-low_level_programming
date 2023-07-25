@@ -1,11 +1,13 @@
 #include "main.h"
 /**
- * reset_to_98 - Function to a pointer to an int and updates the value to 98
- * @n: input
- * Return n: returns 98
+ * reset_to_98 - resets the value of an integer pointer to 98.
+ *
+ * @n: pointer for the value to be changed
+ *
+ * Return: void
  *
  */
-void rest_to_98(int *n)
+void reset_to_98(int *n)/** datatype * */
 {
 	*n = 98;
 }
