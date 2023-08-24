@@ -3,7 +3,7 @@
 
 /**
  * print_list - outputs all elements of list_t
- * @n: list pointer
+ * @h: list pointer
  * Return: nodes present
  */
 size_t print_list(const list_t *h)
