@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -10,16 +10,27 @@
  * Return: pointer to array, Null if fail
  *
  */
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
-	char *str;
-	unsigned int i;
+	char *array;
+	unsigned int x;
 
-	str = malloc(sizeof(char) * size);
-	if (size == 0 || str == NULL)
+	if (size == 0)
+	{
 		return (NULL);
+	}
 
-	for (i = 0; i < size; i++)
-		str[i] = c;
-	return (str);
+	array = malloc(size * sizeof(*array));
+	if (array == NULL)
+	{
+		return (NULL);
+	}
+
+	for (x = 0; x < size; x++)
+	{
+		array[x] = c;
+	}
+
+	return (array);
 }
+
