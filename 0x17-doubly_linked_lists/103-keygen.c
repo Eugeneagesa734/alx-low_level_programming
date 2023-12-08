@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	len = strlen(argv[1]);
 	key[0] = argv[1][0] ^ 0x3;
 	for (i = 1; i < len; i++)
-		key[i] = argv[1][i] ^ argv[1][i - 1];
+        key[i] = argv[1][i] ^ argv[1][i - 1];
 	key[i] = '\0';
 
 	printf("%s\n", key);
